@@ -1,0 +1,60 @@
+body {
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  text-align: center;
+  background-color: #DDDDDD;
+  height: 100px;
+  font-size: 20px; }
+  header a {
+    text-decoration: none; }
+  header h1 {
+    color: orange;
+    line-height: 2.4em; }
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #3DA08C;
+  height: 400px; }
+  #content figure {
+    width: 200px;
+    height: 200px;
+    margin: 70px;
+    text-align: center; }
+    #content figure img {
+      width: 600px;
+      max-width: 100%; }
+
+figcaption {
+  color: white; }
+
+h3 {
+  text-align: center;
+  color: #2E4451;
+  font-size: 30px;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+#button1 {
+  background-color: #DDDDDD;
+  height: 100px;
+  text-align: center; }
+  #button1 .cpbutt {
+    line-height: 4em; }
+
+button {
+  border: 1px;
+  border-color: #2E4451;
+  font-color: #2E4451; }
+
+#button2 {
+  background-color: #DDDDDD;
+  height: 100px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

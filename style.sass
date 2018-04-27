@@ -1,0 +1,80 @@
+// Variables and Mixins //
+$bgcolour: #DDDDDD
+$bgcolour2: #3DA08C
+
+body
+	font-family: 'Montserrat', sans-serif
+
+@mixin flexing()
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+// Header //
+header
+	text-align: center
+	background-color: $bgcolour
+	height: 100px
+	font-size: 20px
+
+	a
+		text-decoration: none
+
+	h1
+		color: orange
+		line-height: 2.4em
+
+// Images & Captions //
+#content
+	@include flexing
+	text-align: center
+	background-color: $bgcolour2
+	height: 400px
+		
+	figure
+		width: 200px
+		height: 200px
+		margin: 70px
+		text-align: center
+
+		img
+			width: 600px
+			max-width: 100%
+			// z-index: 1
+
+figcaption
+	color: white
+
+h3
+	text-align: center
+	color: #2E4451
+	font-size: 30px
+	float: right
+	@include flexing
+	// padding: 20px
+
+// Buttons //
+#button1
+	background-color: $bgcolour
+	height: 100px
+	text-align: center
+
+	.cpbutt
+		line-height: 4em
+
+button
+	border: 1px
+	border-color: #2E4451
+	font-color: #2E4451
+
+#button2
+	background-color: $bgcolour
+	height: 100px
+	text-align: center
+
+
+
+
+
+
+
