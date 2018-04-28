@@ -1,14 +1,16 @@
 // Variables and Mixins //
 $bgcolour: #DDDDDD
 $bgcolour2: #3DA08C
-
-body
-	font-family: 'Montserrat', sans-serif
+$dshadow: 5px 5px 5px grey
 
 @mixin flexing()
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
+
+// Font //
+body
+	font-family: 'Montserrat', sans-serif
 
 // Header //
 header
@@ -16,6 +18,7 @@ header
 	background-color: $bgcolour
 	height: 100px
 	font-size: 20px
+	margin: 0px 20px 0px 20px
 
 	a
 		text-decoration: none
@@ -23,14 +26,18 @@ header
 	h1
 		color: orange
 		line-height: 2.4em
+a:hover
+	text-decoration: underline
 
-// Images & Captions //
+
+// Images & Captions; Forms //
 #content
 	@include flexing
 	text-align: center
 	background-color: $bgcolour2
 	height: 400px
-		
+	margin: 0px 20px 0px 20px	
+
 	figure
 		width: 200px
 		height: 200px
@@ -40,24 +47,28 @@ header
 		img
 			width: 600px
 			max-width: 100%
-			// z-index: 1
+			box-shadow: $dshadow
+			border-radius: 10px
 
 figcaption
 	color: white
+	box-shadow: $dshadow
+	border-radius: 10px
 
-h3
-	text-align: center
-	color: #2E4451
-	font-size: 30px
-	float: right
+#content2
 	@include flexing
-	// padding: 20px
+	text-align: center
+	background-color: $bgcolour2
+	height: 200px
+	margin: 0px 20px 0px 20px
+	padding: 20px	
 
 // Buttons //
 #button1
 	background-color: $bgcolour
 	height: 100px
 	text-align: center
+	margin: 0px 20px 0px 20px
 
 	.cpbutt
 		line-height: 4em
@@ -71,6 +82,23 @@ button
 	background-color: $bgcolour
 	height: 100px
 	text-align: center
+
+.cbutt
+	bottom: 300
+	position: fixed
+
+// Paragraph for Insurance Quote - Why still margin between this and main content?! //
+#quotep
+	text-align: center
+	height: 100px
+	background-color: $bgcolour
+	color: orange
+	font-size: 1.5em
+	line-height: 2em
+	margin: 0px 20px 0px 20px
+
+
+
 
 
 
